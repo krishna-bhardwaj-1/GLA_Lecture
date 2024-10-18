@@ -10,17 +10,17 @@ public class Search_insert_position_35LC {
         int lo=0;
         int hi=nums.length-1;
         while(lo<=hi){
-            int mid=(lo+hi)/2;
-            if(nums[mid]==tar){
+            int mid = (lo+hi)/2;
+            if (nums[mid] == tar) {
                 return mid;
             }
-            else if(nums[mid]>tar){
-                lo=mid+1;
-            }
-            else{
+            else if (nums[mid] > tar) {
                 hi=mid-1;
             }
+            else {
+                lo=mid+1;
+            }
         }
-        return nums.length;
+        return lo;
     }
 }
