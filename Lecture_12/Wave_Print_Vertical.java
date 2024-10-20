@@ -1,6 +1,6 @@
 package Lecture_12;
 
-public class Wave_Print {
+public class Wave_Print_Vertical {
     public static void main(String[] args) {
         int[][] arr={{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22}};
         //verical wave print
