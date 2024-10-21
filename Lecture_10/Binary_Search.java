@@ -15,7 +15,7 @@ public class Binary_Search {
             if (arr[mid] == item) {
                 return mid;
             }
-            else if (arr[mid] < item) {
+            else if (arr[mid] > item) {
                 hi=mid-1;
             }
             else {
