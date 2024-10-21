@@ -1,34 +1,30 @@
 package Assignment_6685;
 import java.util.*;
-public class Help_Ramu_2 {
-    public static void main(String[] args) {
-            Scanner in=new Scanner(System.in);
-            int t=in.nextInt();
-            while(t-->0){
-                int a=0;
-                int b=0;
-                int[] cs=new int[4];
-                for(int i=0;i<4;i++){
-                    cs[i]=in.nextInt();
-                }
-                int n=in.nextInt();
-                int m=in.nextInt();
-                int[] rs=new int[n];
-                for(int i=0;i<n;i++){
-                    rs[i]=in.nextInt();
-                    a+=Math.min(rs[i]*cs[0],cs[1]);
-                }
-                a=Math.min(a,cs[2]);
-                int[]cb=new int[m];
-                for(int i=0;i<m;i++){
-                    cb[i]=in.nextInt();
-                    b+=Math.min(cb[i]*cs[0],cs[1]);
-                }
-                b=Math.min(b,cs[2]);
-                b=Math.min(b+a,cs[3]);
-                System.out.println(b);
-
-
+public class Help_Ramu {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int p=sc.nextInt();
+        int c=1;
+        while(c++<=p){
+            int t1=sc.nextInt();
+            int t2=sc.nextInt();
+            int t3=sc.nextInt();
+            int t4=sc.nextInt();
+            int n=sc.nextInt();
+            int m=sc.nextInt();
+            int totalr=0;
+            for(int i=0;i<n;i++){
+                int a=sc.nextInt();
+                totalr+=Math.min(a*t1,t2);
             }
+            totalr=Math.min(totalr,t3);
+            int totalc=0;
+            for(int i=0;i<m;i++){
+                int a=sc.nextInt();
+                totalc+=Math.min(a*t1,t2);
+            }
+            totalc=Math.min(totalc,t3);
+            System.out.println(Math.min((totalc+totalr),t4));
         }
+    }
 }
