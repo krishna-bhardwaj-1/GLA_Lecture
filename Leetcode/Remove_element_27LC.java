@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Remove_element_132LC {
+public class Remove_element_27LC {
     public static void main(String[] args) {
         int[] arr={3,2,2,3};
         System.out.println(Remove(arr,3));
