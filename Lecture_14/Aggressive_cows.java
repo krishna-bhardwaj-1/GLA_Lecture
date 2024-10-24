@@ -1,13 +1,22 @@
 package Lecture_14;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Aggressive_cows {
     public static void main(String[] args) {
-        int[] stall={1,2,8,4,9};
-        int noc=3;
-        Arrays.sort(stall);
-        System.out.println(Largest_minimum(stall,noc));
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        while (n-->0) {
+            int size=sc.nextInt();
+            int[] stall =new int[size];
+            int noc = sc.nextInt();
+            for(int i=0;i<size;i++){
+                stall[i]=sc.nextInt();
+            }
+            Arrays.sort(stall);
+            System.out.println(Largest_minimum(stall, noc));
+        }
     }
     public static int Largest_minimum(int[] stall,int noc){
         int lo=0;
