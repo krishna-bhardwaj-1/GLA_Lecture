@@ -6,17 +6,20 @@ public class Vlad_and_the_Best_of_Five {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        while(n-->0){
+        sc.nextLine();
+        while(n>0){
             String st=sc.nextLine();
             char[] arr=st.toCharArray();
             int a=0;
             int b=0;
-            for(int i=0;i<st.length();i++)
+            for(int i=0;i<arr.length;i++) {
                 if (arr[i] == 'A') {
                     a++;
                 } else b++;
-            System.out.println(a+"and "+b);
+            }
+            char ch=(a>b)?'A':'B';
+            System.out.println(ch);
+            n--;
         }
-
     }
 }
