@@ -2,7 +2,7 @@ package Lecture_12;
 
 public class Transpose {
     public static void main(String[] args) {
-        int[][] arr={{1,4,7,11},{2,5,8,12},{3,6,9,16},{6,14,15,28}};
+        int[][] arr={{1,2,3},{4,5,6},{7,8,9}};
         trans(arr);
         Print(arr);
     }
