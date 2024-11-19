@@ -15,6 +15,7 @@ public class Height_checker {
             if(heights[i]!=arr[i]){
                 c++;
             }
+            
         }
         System.out.println(c);
     }
