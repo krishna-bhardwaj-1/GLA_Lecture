@@ -2,25 +2,29 @@ package Leetcode;
 
 public class Minimum_Size_Subarray_Sum {
     public static void main(String[] args) {
-        int[] arr={1,4,4};
-        int target=4;
+        int[] arr={2,3,1,2,4,3};
+        int target=7;
         System.out.println(minSubArrayLen(target, arr));
     }
-    public static int minSubArrayLen(int target, int[] nums){
-        int ans=nums.length;
-        int c=0,sum=0;
-        for(int i=0;i<nums.length;i++){
-            sum+=nums[i];
-            if(sum<=target){
-                c++;
+    public static int minSubArrayLen(int target, int[] arr){
+        int si=0;
+        int ei=0;
+        int ans=Integer.MAX_VALUE;
+        int sum=0;
+        while(ei<arr.length){
+            //grow
+            sum+=arr[ei];
+            //shrink
+            while(sum>target && si<=ei){
+                sum-=arr[si];
+                si++;
             }
-            else {
-                ans=Math.min(ans,c);
-                sum=0;
-                c=1;
+            //ansupdate
+            if(sum==target) {
+                ans = Math.min(ans, ei - si + 1);
             }
+            ei++;
         }
-        ans=Math.min(ans,c);
         if(sum<target){
             return 0;
         }
