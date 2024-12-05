@@ -9,6 +9,7 @@ public class datatypes_demo_3 {
         char ch1=97;
         // ch1=ch1+1; // ch=ch+1 -> typecasting           ch+=1   -> no typecasting
         ch1+=1;
+//        ch1=(char)(ch1+1);
         System.out.println(ch1);
     }
 }
