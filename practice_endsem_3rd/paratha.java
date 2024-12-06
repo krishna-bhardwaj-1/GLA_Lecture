@@ -1,4 +1,4 @@
-package practice_endsem;
+package practice_endsem_3rd;
 
 import java.util.Scanner;
 

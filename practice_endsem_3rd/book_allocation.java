@@ -1,6 +1,4 @@
-package practice_endsem;
-
-import java.util.Scanner;
+package practice_endsem_3rd;
 
 public class book_allocation {
     public static void main(String[] args) {

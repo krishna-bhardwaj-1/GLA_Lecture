@@ -1,6 +1,4 @@
-package practice_endsem;
-
-import java.util.Arrays;
+package practice_endsem_3rd;
 
 public class morevoting {
     public static void main(String[] args) {

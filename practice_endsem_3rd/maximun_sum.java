@@ -1,4 +1,4 @@
-package practice_endsem;
+package practice_endsem_3rd;
 
 public class maximun_sum {
     public static void main(String[] args) {

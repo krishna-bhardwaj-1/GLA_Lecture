@@ -1,6 +1,4 @@
-package practice_endsem;
-
-import java.math.BigDecimal;
+package practice_endsem_3rd;
 
 public class kuvh {
     public static void main(String[] args) {
