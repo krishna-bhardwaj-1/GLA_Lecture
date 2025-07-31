@@ -2,7 +2,7 @@ package Lecture_10;
 
 public class Kadanes_Algo {
     public static void main(String[] args) {
-        int[] arr={2,3,-7,5,-1,7};
+        int[] arr={1,-3,2,3,-4};
         System.out.println(Maximum_Sum(arr));
     }
     public static int Maximum_Sum(int[] arr){
